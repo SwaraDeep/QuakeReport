@@ -1,17 +1,17 @@
 package com.example.android.quakereport;
 
 
-import java.util.ArrayList;
-
 public class Item{
     private String mMag;
     private String mPlace;
     private String mDate;
+    private String mTime;
 
-    public Item(String mag, String place, String date){
+    public Item(String mag, String place, String date, String time) {
         mMag = mag;
         mPlace = place;
         mDate = date;
+        mTime = time;
     }
 
     public String getmMag() {
@@ -24,5 +24,9 @@ public class Item{
 
     public String getmDate() {
         return mDate;
+    }
+
+    public String getmTime() {
+        return mTime;
     }
 }
